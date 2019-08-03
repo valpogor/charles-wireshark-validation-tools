@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ADWORKS AUTOMATION SUITE</title></head>
+	<body>
+	<img src=http://events.adage.com/digital2012/images/attlogo.png HEIGHT=100 WIDTH=380 ALIGN=center >
+	<h1 id=Report ALIGN=left> ADWORKS AUTOMATION SUITE </h1>
+
+	<table style=width:550px border='2'>
+		<tr style="font-size:20px;text-align: center;">
+			<td>LIVE </td><td>VOD</td></tr>
+		<tr style="font-size:20px;text-align: left;">
+		<td><form action="phpLIVE.php" method="post" enctype="multipart/form-data">
+	<input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="UPLOAD LOG FILE" name="submit">
+	</form></td>
+	<td><form action="phpVOD.php" method="post" enctype="multipart/form-data">
+	<input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="UPLOAD LOG FILE" name="submit">
+	</form></td></tr></table>
+	
+	<tr style="font-size:20px;text-align: center;">	
+	<td><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#div1").load("1.html");
+		});
+	});
+	</script>
+	<div id="div1"><h2></h2></div>
+	<button>Get Report LIVE</button></td>
+	
+    
+	</body>
+</html>

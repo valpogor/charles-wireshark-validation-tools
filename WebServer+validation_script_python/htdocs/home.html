@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ADWORKS AUTOMATION SUITE</title></head>
+	<body>
+	<img src=http://events.adage.com/digital2012/images/attlogo.png HEIGHT=100 WIDTH=380 ALIGN=left >
+	<h1 id=Report ALIGN=left> ADWORKS AUTOMATION SUITE </h1>
+
+	<table style=width:550px border='2'>
+		<tr style="font-size:20px;text-align: center;">
+			<td>LIVE </td><td>VOD</td></tr>
+		<tr style="font-size:20px;text-align: left;">
+		<tr style="font-size:20px;text-align: center;">
+		<td><form action="phpLIVE.php" method="post" enctype="multipart/form-data">
+	<input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="UPLOAD LOG FILE" name="submit">
+	</form></td>
+	<td><form action="phpVOD.php" method="post" enctype="multipart/form-data">
+	<input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="UPLOAD LOG FILE" name="submit">
+	</form></td></tr>
+	<tr style="font-size:20px;text-align: center;">	
+	<td><form action="createReportLIVE.php" method="post" enctype="multipart/form-data">
+    <input type="submit" value="CREATE REPORT" name="submit">
+	</form></td>
+	<td><form action="createReportVOD.php" method="post" enctype="multipart/form-data">
+    <input type="submit" value="CREATE REPORT" name="submit">
+	</form></td>
+	</tr>
+		
+
+    </table>
+	</body>
+</html>
