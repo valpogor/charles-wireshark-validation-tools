@@ -1,4 +1,5 @@
-# DIA validation server
+# Digital Advertisement validation server 
+Validation API calls, beacons, cdn
 
 
 ## Demo
